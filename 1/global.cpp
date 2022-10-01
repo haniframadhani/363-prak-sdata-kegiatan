@@ -28,14 +28,7 @@ std::ostream &operator<<(std::ostream &out, const Bilangan &x)
 
 void Bilangan::banding_int(const Bilangan &x, const Bilangan &y)
 {
-  if (x.a > y.a)
-  {
-    std::cout << x.a << "::x lebih besar dari " << y.a << "::y";
-  }
-  else
-  {
-    std::cout << x.a << "::x lebih kecil dari " << y.a << "::y";
-  }
+  (x.a > y.a) ? std::cout << x.a << "::x lebih besar dari " << y.a << "::y" : std::cout << x.a << "::x lebih kecil dari " << y.a << "::y";
 }
 
 Bilangan &Bilangan::operator=(const Bilangan &x)
