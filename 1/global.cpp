@@ -50,9 +50,6 @@ std::istream &operator>>(std::istream &in, Bilangan &x)
 Bilangan Bilangan::operator+(const Bilangan &x) const
 {
   Bilangan cc;
-  // std::cout << "tipe data cc: " << typeid(cc).name() << std::endl;
-  // std::cout << "tipe data cc.a: " << typeid(cc.a).name() << std::endl;
-  // std::cout << "tipe data cc.b: " << typeid(cc.b).name() << std::endl;
   cc.a = a + x.a;
   cc.b = b + x.b;
   return cc;
@@ -61,9 +58,6 @@ Bilangan Bilangan::operator+(const Bilangan &x) const
 Bilangan Bilangan::operator-() const
 {
   Bilangan x;
-  // std::cout << "tipe data x: " << typeid(x).name() << std::endl;
-  // std::cout << "tipe data x.a: " << typeid(x.a).name() << std::endl;
-  // std::cout << "tipe data x.b: " << typeid(x.b).name() << std::endl;
   x.a = -a;
   x.b = -b;
   return x;
